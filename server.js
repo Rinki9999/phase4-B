@@ -70,6 +70,7 @@ app.post("/api/generate", async (req, res) => {
     });
   }
 });
+app.get("/", (req, res) => res.send("🚀 API is live and running"));
 
 app.listen(PORT, () => {
   console.log(`✅ Groq server running on http://localhost:${PORT}`);
